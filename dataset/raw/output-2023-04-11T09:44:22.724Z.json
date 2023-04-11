@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is Flat<T> in TypeScript?",
+      "answer": "Flat<T> is a type that flattens a tuple type in TypeScript."
+    },
+    {
+      "question": "How does Flat<T> flatten a tuple type?",
+      "answer": "Flat<T> uses type inference to get the first element from the tuple, then checks if the inferred element type is a tuple or not. If it is a tuple, it applies flat() to it and returns the newly created tuple with flattened first element type and rest elements, otherwise creates a new tuple with that element and spreads out the rest of flattened tuples."
+    },
+    {
+      "question": "What is the syntax for defining Flat<T> in TypeScript?",
+      "answer": "The syntax for defining Flat<T> in TypeScript is:\n\n type Flat<T extends any[]> = T extends [infer F, ...infer R] ? F extends any[] ? [...Flat<F>, ...Flat<R>] : [F, ...Flat<R>] : []"
+    },
+    {
+      "question": "What is the purpose of the 'infer' keyword in Flat<T>?",
+      "answer": "The 'infer' keyword in Flat<T> is used for type inference. It allows TypeScript to infer the type of a generic parameter based on the type of an argument passed to a function or the type of a variable."
+    },
+    {
+      "question": "What is the purpose of the 'extends' keyword in Flat<T>?",
+      "answer": "The 'extends' keyword in Flat<T> is used to constrain the type parameter T to be an array type. This ensures that the Flat<T> type can only be used with tuple types."
+    },
+    {
+      "question": "What is the purpose of the spread operator (...) in Flat<T>?",
+      "answer": "The spread operator (...) in Flat<T> is used to spread out the elements of a flattened tuple into a new tuple. This allows TypeScript to create a new tuple with the flattened elements of the original tuple."
+    }
+  ]
+}

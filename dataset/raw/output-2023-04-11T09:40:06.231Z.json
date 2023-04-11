@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the LengthOfTuple<T> type in TypeScript?",
+      "answer": "The LengthOfTuple<T> type is used to determine the length of a tuple type T in TypeScript."
+    },
+    {
+      "question": "What is a tuple type in TypeScript?",
+      "answer": "A tuple type in TypeScript is an array with a fixed number of elements, where each element may have a different type."
+    },
+    {
+      "question": "How does the LengthOfTuple<T> type work?",
+      "answer": "The LengthOfTuple<T> type works by accessing the 'length' property of the tuple type T, which returns the number of elements in the tuple."
+    },
+    {
+      "question": "Can the LengthOfTuple<T> type be used with other types besides tuples?",
+      "answer": "No, the LengthOfTuple<T> type can only be used with tuple types in TypeScript."
+    },
+    {
+      "question": "What is the syntax for using the LengthOfTuple<T> type?",
+      "answer": "The syntax for using the LengthOfTuple<T> type is: LengthOfTuple<tupleType>, where tupleType is the tuple type for which you want to determine the length."
+    }
+  ]
+}

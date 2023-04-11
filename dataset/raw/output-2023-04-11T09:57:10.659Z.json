@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the `BuildTuple` type in the `Multiply` implementation?",
+      "answer": "The `BuildTuple` type is used to create a tuple of a specified length `N` filled with `unknown` values. It is used in the `Subtract` type to subtract `B` from `A` by removing the first `B` elements from a tuple of length `A`."
+    },
+    {
+      "question": "What is the purpose of the `Subtract` type in the `Multiply` implementation?",
+      "answer": "The `Subtract` type is used to subtract `B` from `A` by removing the first `B` elements from a tuple of length `A`. It returns the length of the resulting tuple, which is used to determine when the multiplication is complete."
+    },
+    {
+      "question": "What is the purpose of the `Accumulator` parameter in the `Multiply` implementation?",
+      "answer": "The `Accumulator` parameter is used to accumulate the result of the multiplication. It starts as an empty array and is filled with `A` for each iteration of the multiplication until `B` is equal to 0."
+    },
+    {
+      "question": "What happens when `B` is equal to 0 in the `Multiply` implementation?",
+      "answer": "When `B` is equal to 0, the multiplication is complete and the length of the `Accumulator` array is returned as the result."
+    },
+    {
+      "question": "What is the time complexity of the `Multiply` implementation?",
+      "answer": "The time complexity of the `Multiply` implementation is O(B), where B is the second argument passed to the function. This is because the function recursively calls itself B times."
+    }
+  ]
+}

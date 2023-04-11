@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the SnakeCase<S> type in TypeScript?",
+      "answer": "The SnakeCase<S> type is used to convert a given string type S to its snake_case equivalent. It splits the string into words and separates them with underscores, while converting all uppercase letters to lowercase."
+    },
+    {
+      "question": "What is the syntax for defining a generic type in TypeScript?",
+      "answer": "To define a generic type in TypeScript, you use the syntax of placing a type parameter in angle brackets before the type name. For example, `type MyType<T> = ...` defines a generic type MyType that takes a type parameter T."
+    },
+    {
+      "question": "What is the purpose of the `extends` keyword in TypeScript type definitions?",
+      "answer": "The `extends` keyword in TypeScript type definitions is used to specify a constraint on a type parameter. It ensures that the type argument passed to the generic type satisfies the constraint. For example, `type MyType<T extends string> = ...` ensures that the type argument passed to MyType is a string or a subtype of string."
+    },
+    {
+      "question": "What is the purpose of the `infer` keyword in TypeScript type definitions?",
+      "answer": "The `infer` keyword in TypeScript type definitions is used to infer the type of a type parameter from a given type. It allows you to extract a part of a type and use it as a type parameter. For example, `type MyType<T> = T extends Array<infer U> ? U : never` infers the type of the elements in an array type."
+    },
+    {
+      "question": "What is the purpose of the conditional operator `? :` in the SnakeCase<S> type definition?",
+      "answer": "The conditional operator `? :` in the SnakeCase<S> type definition is used to check if the first character of the string is uppercase or not. If it is uppercase, it converts it to lowercase and adds an underscore before it. If it is lowercase, it simply adds it to the result string. This is done recursively for each character in the string."
+    },
+    {
+      "question": "What is the purpose of the `Lowercase` and `Uppercase` built-in types in TypeScript?",
+      "answer": "The `Lowercase` and `Uppercase` built-in types in TypeScript are used to convert a string to its lowercase or uppercase equivalent, respectively. For example, `type MyType = Lowercase<'HELLO'>` results in the type `mytype`."
+    }
+  ]
+}

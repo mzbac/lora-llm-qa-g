@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is a tuple in TypeScript?",
+      "answer": "A tuple is an array-like object that represents a collection of values of different types. The types of the values in a tuple are known and fixed at the time of declaration."
+    },
+    {
+      "question": "What is the ReverseTuple<T> type in TypeScript?",
+      "answer": "ReverseTuple<T> is a generic type that takes a tuple type T and returns a new tuple type with the elements in reverse order."
+    },
+    {
+      "question": "How does the ReverseTuple<T> type work?",
+      "answer": "The ReverseTuple<T> type recursively applies the logic of inferring the last element from a tuple and creating a new tuple with the last element as the first element in it. This process is repeated for the inferred Rest types until all elements have been reversed."
+    },
+    {
+      "question": "Can tuples be modified in TypeScript?",
+      "answer": "No, tuples are immutable in TypeScript. Once a tuple is declared, its length and types of elements cannot be changed."
+    },
+    {
+      "question": "What is the difference between a tuple and an array in TypeScript?",
+      "answer": "A tuple is a fixed-length array-like object that can contain elements of different types, while an array is a dynamic-length object that can contain elements of the same type. Tuples are useful when you want to represent a collection of values with a specific length and type for each element."
+    }
+  ]
+}

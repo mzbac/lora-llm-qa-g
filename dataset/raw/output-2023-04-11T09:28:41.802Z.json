@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the ConstructorParameters<Type> type in TypeScript?",
+      "answer": "The ConstructorParameters<Type> type is used to extract the parameter types of a constructor function type."
+    },
+    {
+      "question": "How does the ConstructorParameters<Type> type work?",
+      "answer": "The ConstructorParameters<Type> type uses a conditional constructor function type and infer to match the parameter types of the constructor function type."
+    },
+    {
+      "question": "Can the ConstructorParameters<Type> type be used with any constructor function type?",
+      "answer": "No, the ConstructorParameters<Type> type can only be used with constructor function types that have at least one parameter."
+    },
+    {
+      "question": "What is the return type of the ConstructorParameters<Type> type?",
+      "answer": "The return type of the ConstructorParameters<Type> type is an array of the parameter types of the constructor function type."
+    },
+    {
+      "question": "Can the ConstructorParameters<Type> type be used with generic constructor function types?",
+      "answer": "Yes, the ConstructorParameters<Type> type can be used with generic constructor function types as long as the generic type parameters are specified."
+    }
+  ]
+}

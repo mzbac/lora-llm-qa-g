@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Equal type in TypeScript?",
+      "answer": "The Equal type is used to check if two types are equal or not. It returns a boolean value indicating whether the two types are the same or not."
+    },
+    {
+      "question": "How does the Equal type work?",
+      "answer": "The Equal type uses conditional types to check if two types are equal or not. It creates two functions that return either 1 or 2 based on whether the input type extends A or B. If the two functions return the same value, then the types are considered equal and the Equal type returns true. Otherwise, it returns false."
+    },
+    {
+      "question": "What are conditional types in TypeScript?",
+      "answer": "Conditional types are a feature in TypeScript that allow you to conditionally choose a type based on a condition. They are defined using the 'extends' keyword and can be used to create complex type mappings and transformations."
+    },
+    {
+      "question": "What is the purpose of the extends keyword in TypeScript?",
+      "answer": "The extends keyword in TypeScript is used to create type constraints. It allows you to specify that a type parameter must extend a certain type or set of types. This is useful for creating generic functions and classes that work with a wide range of types."
+    },
+    {
+      "question": "What is the difference between 'extends' and 'implements' in TypeScript?",
+      "answer": "'Extends' is used to create type constraints for type parameters, while 'implements' is used to specify that a class or object must implement a certain interface. 'Extends' is used for inheritance and subtyping, while 'implements' is used for interface implementation."
+    }
+  ]
+}

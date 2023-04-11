@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Pick<T, K> utility type in TypeScript?",
+      "answer": "The Pick<T, K> utility type in TypeScript allows you to create a new type by selecting a subset of properties from an existing type T, based on the keys K provided."
+    },
+    {
+      "question": "What is the syntax for using the Pick<T, K> utility type in TypeScript?",
+      "answer": "The syntax for using the Pick<T, K> utility type in TypeScript is `type NewType = Pick<ExistingType, Keys>` where `ExistingType` is the type from which you want to pick properties, `Keys` is a union of keys of `ExistingType` that you want to pick, and `NewType` is the resulting type that only contains the picked properties."
+    },
+    {
+      "question": "How do you implement the Pick<T, K> utility type in TypeScript?",
+      "answer": "You can implement the Pick<T, K> utility type in TypeScript using a mapped type. Here's an example implementation: \n\n```\ntype MyPick<T,K extends keyof T> = {\n  [Key in K]: T[Key]\n}\n``` \n\nThis implementation creates a new type `MyPick` that takes two type parameters `T` and `K`. The `keyof T` constraint on `K` ensures that only keys that exist in `T` can be used. The mapped type `[Key in K]: T[Key]` selects the properties from `T` that correspond to the keys in `K` and creates a new type with those properties."
+    },
+    {
+      "question": "Can you use the Pick<T, K> utility type to pick properties from nested objects in TypeScript?",
+      "answer": "Yes, you can use the Pick<T, K> utility type to pick properties from nested objects in TypeScript. You can use dot notation to access nested properties and specify the keys you want to pick. For example, if you have an object `person` with a nested object `address`, you can pick the `city` and `state` properties from `address` like this: \n\n```\ntype PersonAddress = Pick<Person, 'address.city' | 'address.state'>\n``` \n\nThis creates a new type `PersonAddress` that only contains the `city` and `state` properties from the `address` object."
+    },
+    {
+      "question": "What is the difference between the Pick<T, K> and Omit<T, K> utility types in TypeScript?",
+      "answer": "The Pick<T, K> and Omit<T, K> utility types in TypeScript are used to create new types by selecting or omitting properties from an existing type T. The difference between them is that Pick<T, K> selects properties based on the keys K provided, while Omit<T, K> omits properties based on the keys K provided. For example, if you have a type `Person` with properties `name`, `age`, and `address`, and you want to create a new type that only contains the `name` and `age` properties, you can use `Pick<Person, 'name' | 'age'>`. If you want to create a new type that omits the `address` property, you can use `Omit<Person, 'address'>`."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the FirstItem<T> type in TypeScript?",
+      "answer": "The FirstItem<T> type in TypeScript is used to extract the type of the first element in an array type T."
+    },
+    {
+      "question": "What is the syntax for defining the FirstItem<T> type in TypeScript?",
+      "answer": "The syntax for defining the FirstItem<T> type in TypeScript is: type FirstItem<T extends any[]> = T extends [infer F, ...infer Rest] ? F: never"
+    },
+    {
+      "question": "What does the 'infer' keyword do in the definition of the FirstItem<T> type?",
+      "answer": "The 'infer' keyword in the definition of the FirstItem<T> type is used to infer the type of the first element in the array type T."
+    },
+    {
+      "question": "What is the purpose of the 'never' keyword in the definition of the FirstItem<T> type?",
+      "answer": "The 'never' keyword in the definition of the FirstItem<T> type is used to indicate that the type of the first element in the array type T cannot be determined."
+    },
+    {
+      "question": "Can the FirstItem<T> type be used with any type of array?",
+      "answer": "The FirstItem<T> type can be used with any type of array, as long as the array type is defined using the square bracket notation."
+    }
+  ]
+}

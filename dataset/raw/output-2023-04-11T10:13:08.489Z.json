@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the UndefinedToNull type in TypeScript?",
+      "answer": "The UndefinedToNull type is used to convert all undefined values in a given type to null values."
+    },
+    {
+      "question": "What is the syntax for defining the UndefinedToNull type in TypeScript?",
+      "answer": "The syntax for defining the UndefinedToNull type in TypeScript is: type UndefinedToNull<T> = T extends Record<string, any> ? { [K in keyof T]: UndefinedToNull<T[K]> } : (T extends [infer A, ...infer B] ? [A, ...UndefinedToNull<B>] : T extends undefined ? null : T)"
+    },
+    {
+      "question": "What is the purpose of the 'extends Record<string, any>' check in the UndefinedToNull type definition?",
+      "answer": "The 'extends Record<string, any>' check in the UndefinedToNull type definition ensures that the type being passed in is an object with string keys and any values. This allows the type to be recursively traversed and all undefined values to be converted to null values."
+    },
+    {
+      "question": "What is the purpose of the 'extends [infer A, ...infer B]' check in the UndefinedToNull type definition?",
+      "answer": "The 'extends [infer A, ...infer B]' check in the UndefinedToNull type definition ensures that the type being passed in is an array. This allows the type to be recursively traversed and all undefined values to be converted to null values."
+    },
+    {
+      "question": "What is the purpose of the 'T extends undefined ? null : T' check in the UndefinedToNull type definition?",
+      "answer": "The 'T extends undefined ? null : T' check in the UndefinedToNull type definition ensures that if the type being passed in is undefined, it is converted to null. This is necessary because null is a valid type in TypeScript, but undefined is not."
+    },
+    {
+      "question": "How can the UndefinedToNull type be used in practice?",
+      "answer": "The UndefinedToNull type can be used in practice to ensure that all undefined values in a given object or array are converted to null values. This can be useful in situations where null is a valid value but undefined is not, or when working with APIs that return undefined values."
+    }
+  ]
+}

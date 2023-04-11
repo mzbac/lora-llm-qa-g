@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of implementing IsAny<T> in TypeScript?",
+      "answer": "The purpose of implementing IsAny<T> in TypeScript is to check if a given type T is assignable to any type."
+    },
+    {
+      "question": "Why can't we use conditional type checking for any in IsAny<T> implementation?",
+      "answer": "We can't use conditional type checking for any in IsAny<T> implementation because all types extend to any, so the condition will always be true."
+    },
+    {
+      "question": "What attribute of the any type is used in IsAny<T> implementation?",
+      "answer": "In IsAny<T> implementation, we use the attribute of intersecting with any, which will be any. This is because intersecting any type with any type will always result in any type."
+    },
+    {
+      "question": "How does the IsAny<T> implementation work?",
+      "answer": "The IsAny<T> implementation checks if the type 'Foo' extends the intersection of 'Bar' and T. If T is any, the intersection will be any, and the condition will be true, indicating that T is assignable to any type."
+    }
+  ]
+}

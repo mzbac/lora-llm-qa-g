@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the 'infer' keyword in the 'FirstChar' type?",
+      "answer": "The 'infer' keyword is used to capture a portion of a type and use it later in the definition. In the 'FirstChar' type, it is used to capture the first character of the string type passed as a generic parameter."
+    },
+    {
+      "question": "What is the return type of the 'FirstChar' type?",
+      "answer": "The return type of the 'FirstChar' type is either the first character of the string type passed as a generic parameter or 'never' if the generic parameter is not a string."
+    },
+    {
+      "question": "How does the 'extends' keyword work in the 'FirstChar' type?",
+      "answer": "The 'extends' keyword is used to constrain the generic parameter to be a string type. This ensures that the 'FirstChar' type only works with string types and not other types."
+    },
+    {
+      "question": "Can the 'FirstChar' type be used with other types besides string?",
+      "answer": "No, the 'FirstChar' type can only be used with string types because of the 'extends' constraint on the generic parameter."
+    },
+    {
+      "question": "How can the 'FirstChar' type be used in practice?",
+      "answer": "The 'FirstChar' type can be used to extract the first character of a string type in various scenarios, such as validating user input or manipulating strings in a program."
+    }
+  ]
+}

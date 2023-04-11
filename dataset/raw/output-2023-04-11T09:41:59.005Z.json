@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the ReverseTuple<T> type in TypeScript?",
+      "answer": "The ReverseTuple<T> type is used to reverse the order of elements in a tuple type T."
+    },
+    {
+      "question": "What is the syntax for defining a tuple type in TypeScript?",
+      "answer": "A tuple type in TypeScript is defined using square brackets and comma-separated types, like so: [string, number, boolean]."
+    },
+    {
+      "question": "How does the ReverseTuple<T> type work?",
+      "answer": "The ReverseTuple<T> type uses conditional types and recursive inference to reverse the order of elements in a tuple type T. It checks if the tuple is empty, and if not, it splits the tuple into its last element and the rest of the tuple using the spread operator. It then recursively calls itself on the rest of the tuple and concatenates the last element to the reversed tuple."
+    },
+    {
+      "question": "Can the ReverseTuple<T> type be used with any type of tuple?",
+      "answer": "The ReverseTuple<T> type can be used with any tuple type in TypeScript, as long as the tuple is not empty."
+    },
+    {
+      "question": "What is the difference between a tuple type and an array type in TypeScript?",
+      "answer": "A tuple type in TypeScript is a fixed-length array with a specific type for each element, while an array type is a dynamic-length array with a single type for all elements."
+    },
+    {
+      "question": "What are conditional types in TypeScript?",
+      "answer": "Conditional types in TypeScript are types that depend on a condition. They are defined using the 'extends' keyword and can be used to create more complex types based on the properties of other types."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Abs<N> type in TypeScript?",
+      "answer": "The Abs<N> type in TypeScript is used to calculate the absolute value of a given number N. It takes a number N as input and returns its absolute value."
+    },
+    {
+      "question": "What is the StringToNumber<S, T> type in TypeScript?",
+      "answer": "The StringToNumber<S, T> type in TypeScript is a helper type that converts a string S to a number. It uses a recursive approach to count the number of elements in an array T until the length of the array matches the length of the string S."
+    },
+    {
+      "question": "What is the purpose of the T extends any[] parameter in the Abs<N> type?",
+      "answer": "The T extends any[] parameter in the Abs<N> type is used to store an array of any type. It is used as a helper parameter to count the number of elements in the array until it matches the length of the string S in the StringToNumber<S, T> type."
+    },
+    {
+      "question": "What is the purpose of the `${N}` expression in the Abs<N> type?",
+      "answer": "The `${N}` expression in the Abs<N> type is used to convert the number N to a string. This is necessary to pass the string representation of the number to the StringToNumber<S, T> type for conversion."
+    },
+    {
+      "question": "What is the purpose of the `${T['length']}` expression in the StringToNumber<S, T> type?",
+      "answer": "The `${T['length']}` expression in the StringToNumber<S, T> type is used to convert the length of the array T to a string. This is necessary to compare the length of the array with the string S for conversion."
+    },
+    {
+      "question": "What is the purpose of the `-${infer A}` expression in the Abs<N> type?",
+      "answer": "The `-${infer A}` expression in the Abs<N> type is used to extract the negative value of the number N. It uses the `infer` keyword to capture the value of A, which is then passed to the StringToNumber<S, T> type for conversion."
+    }
+  ]
+}

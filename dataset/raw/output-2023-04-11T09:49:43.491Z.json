@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Repeat<T, C> type in TypeScript?",
+      "answer": "The purpose of the Repeat<T, C> type in TypeScript is to return a tuple by repeating a given type T C number of times."
+    },
+    {
+      "question": "What is the difference between Repeat<T, C> and RepeatString<T, C>?",
+      "answer": "The difference between Repeat<T, C> and RepeatString<T, C> is that Repeat<T, C> returns a tuple of repeated elements, while RepeatString<T, C> returns a string of repeated characters."
+    },
+    {
+      "question": "What is the syntax for defining the Repeat<T, C> type in TypeScript?",
+      "answer": "The syntax for defining the Repeat<T, C> type in TypeScript is:\n\ntype Repeat<T, C extends number, Result extends any[] = [], Counter extends any[] = []> = Counter['length'] extends C ?\n    Result :\n    Repeat<T, C, [...Result, T], [...Counter, unknown]>"
+    },
+    {
+      "question": "What does the Counter parameter represent in the Repeat<T, C> type?",
+      "answer": "The Counter parameter in the Repeat<T, C> type represents an array of unknown elements that is used to keep track of the number of times the type T has been repeated."
+    },
+    {
+      "question": "What does the Result parameter represent in the Repeat<T, C> type?",
+      "answer": "The Result parameter in the Repeat<T, C> type represents an array of the repeated elements of type T."
+    },
+    {
+      "question": "How does the Repeat<T, C> type ensure that the correct number of elements are repeated?",
+      "answer": "The Repeat<T, C> type ensures that the correct number of elements are repeated by using a Counter parameter that keeps track of the number of times the type T has been repeated. The type checks if the length of the Counter array is equal to the number C, and if so, returns the Result array. If not, it recursively calls itself with the Counter and Result arrays updated with the new repeated element."
+    }
+  ]
+}

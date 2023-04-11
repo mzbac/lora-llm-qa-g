@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of implementing Trim<T> in TypeScript?",
+      "answer": "The purpose of implementing Trim<T> in TypeScript is to remove whitespace characters from the beginning and end of a string type T, just like the String.prototype.trim() method does for string values in JavaScript."
+    },
+    {
+      "question": "What is the syntax for defining a generic type in TypeScript?",
+      "answer": "The syntax for defining a generic type in TypeScript is to use angle brackets <> to enclose one or more type parameters, which can be used to define the type of one or more variables or functions. For example, the Trim<T> type in the given input example is a generic type that takes a string type T as its type parameter."
+    },
+    {
+      "question": "What is the purpose of the extends keyword in TypeScript?",
+      "answer": "The purpose of the extends keyword in TypeScript is to specify a constraint on a generic type parameter, which restricts the types that can be used as arguments for that parameter. For example, in the Trim<T> type, the extends keyword is used to specify that the type parameter T must extend the string type."
+    },
+    {
+      "question": "What is the purpose of the infer keyword in TypeScript?",
+      "answer": "The purpose of the infer keyword in TypeScript is to allow the compiler to infer the type of a variable or parameter based on its usage in a conditional type. For example, in the Trim<T> type, the infer keyword is used to infer the type of the remaining string after the whitespace characters have been removed."
+    },
+    {
+      "question": "What is a conditional type in TypeScript?",
+      "answer": "A conditional type in TypeScript is a type that depends on a condition, which can be evaluated at compile-time. It allows you to define a type that varies based on the type of a variable or parameter. For example, the Trim<T> type in the given input example is a conditional type that checks if the string type T starts or ends with whitespace characters, and removes them accordingly."
+    },
+    {
+      "question": "How can you use the Trim<T> type in TypeScript?",
+      "answer": "You can use the Trim<T> type in TypeScript to remove whitespace characters from the beginning and end of a string type T, just like the String.prototype.trim() method does for string values in JavaScript. For example, you can define a variable of type Trim<'  hello  '> and assign it the value 'hello', which has the whitespace characters removed."
+    }
+  ]
+}

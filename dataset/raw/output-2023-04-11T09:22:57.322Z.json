@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Record type in TypeScript?",
+      "answer": "The Record type in TypeScript is used to define a type that represents an object with keys of type K and values of type V. It is similar to the built-in Record type in JavaScript, but with added type safety."
+    },
+    {
+      "question": "What is the syntax for defining a Record type in TypeScript?",
+      "answer": "The syntax for defining a Record type in TypeScript is: type Record<K, V> = { [k in K & keyof any]: V }. This uses an intersection to ensure that K is a union type of keyof any, which can be either number, string, or symbol."
+    },
+    {
+      "question": "How can you add type constraints to the keys of a Record type in TypeScript?",
+      "answer": "You can add type constraints to the keys of a Record type in TypeScript by using the extends keyword. For example, you can define a Record type with keys that are valid key types of an object like this: type Record<K extends number | string | symbol, V> = { [key in K]: V }."
+    },
+    {
+      "question": "Can you provide an example of using the Record type in TypeScript?",
+      "answer": "Yes, here is an example of using the Record type in TypeScript: \n\n type Person = { name: string, age: number }\n type PersonRecord = Record<string, Person>\n\n This defines a type PersonRecord that represents an object with string keys and values of type Person."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Exclude type in TypeScript?",
+      "answer": "The Exclude type in TypeScript is used to create a new type by excluding from a union type all members that are assignable to another given type."
+    },
+    {
+      "question": "How does the Exclude type work in TypeScript?",
+      "answer": "The Exclude type in TypeScript works by using a conditional type that distributes over union types. For each member of the union type, the conditional type checks if it is assignable to the excluded type. If it is, the member is excluded from the resulting type. If it is not, the member is included in the resulting type."
+    },
+    {
+      "question": "What is the syntax for using the Exclude type in TypeScript?",
+      "answer": "The syntax for using the Exclude type in TypeScript is as follows: Exclude<UnionType, ExcludedMembers>. UnionType is the union type from which members will be excluded, and ExcludedMembers is the type to which members will be compared for exclusion."
+    },
+    {
+      "question": "What is a distributive conditional type in TypeScript?",
+      "answer": "A distributive conditional type in TypeScript is a conditional type that is distributed over union types. When a distributive conditional type is instantiated with a union type, the result is a union of the conditional type applied to each member of the union type."
+    },
+    {
+      "question": "How is a distributive conditional type used in the implementation of the Exclude type in TypeScript?",
+      "answer": "The Exclude type in TypeScript is implemented using a distributive conditional type. When the Exclude type is instantiated with a union type, the distributive conditional type is applied to each member of the union type, resulting in a union of the conditional type applied to each member. Members that are assignable to the excluded type are excluded from the resulting union type."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Diff<A, B> type in TypeScript?",
+      "answer": "The Diff<A, B> type in TypeScript is used to calculate the difference between two types A and B by returning a union of keys that are present in either A or B but not in both."
+    },
+    {
+      "question": "What is the DiffKeys type in the implementation of Diff<A, B>?",
+      "answer": "The DiffKeys type in the implementation of Diff<A, B> is a helper type that calculates the union of keys that are present in either A or B but not in both using the Exclude utility type."
+    },
+    {
+      "question": "What is the purpose of the Record<string, any> type in the DiffKeys type?",
+      "answer": "The Record<string, any> type in the DiffKeys type is used to ensure that both A and B are objects with string keys and any values."
+    },
+    {
+      "question": "What is the purpose of the keyof operator in the DiffKeys type?",
+      "answer": "The keyof operator in the DiffKeys type is used to get the union of keys of both A and B."
+    },
+    {
+      "question": "What is the purpose of the Exclude utility type in the DiffKeys type?",
+      "answer": "The Exclude utility type in the DiffKeys type is used to calculate the difference between the union of keys of A and B by excluding the keys that are present in both A and B."
+    }
+  ]
+}

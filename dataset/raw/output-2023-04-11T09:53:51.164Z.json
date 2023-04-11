@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Add<A, B> type?",
+      "answer": "The Add<A, B> type is used to get the sum of two positive integers."
+    },
+    {
+      "question": "How can tuples be used as counters for implementing Add?",
+      "answer": "Tuples can be used as counters for implementing Add by building a helper type which builds a tuple of specified length then combines both two tuples for the two numbers and returns its length."
+    },
+    {
+      "question": "What is the purpose of the BuildTuple<N extends number, Tuple extends any[] = []> type?",
+      "answer": "The BuildTuple<N extends number, Tuple extends any[] = []> type is a helper type used to build a tuple of specified length."
+    },
+    {
+      "question": "What is the purpose of the unknown type in the BuildTuple<N extends number, Tuple extends any[] = []> type?",
+      "answer": "The unknown type in the BuildTuple<N extends number, Tuple extends any[] = []> type is used to represent the type of the elements in the tuple that is being built."
+    },
+    {
+      "question": "How does the Add<A extends number, B extends number> type combine the two tuples for the two numbers?",
+      "answer": "The Add<A extends number, B extends number> type combines the two tuples for the two numbers by using the spread operator to concatenate the two tuples."
+    }
+  ]
+}

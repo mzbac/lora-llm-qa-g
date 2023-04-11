@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Filter<T, A> type in TypeScript?",
+      "answer": "The Filter<T, A> type in TypeScript is used to filter out elements from an array of type T that match a given type A."
+    },
+    {
+      "question": "What does the 'extends' keyword mean in the Filter<T, A> type?",
+      "answer": "The 'extends' keyword in the Filter<T, A> type is used to constrain the type parameter T to an array type and the type parameter A to a specific type that we want to filter out from the array."
+    },
+    {
+      "question": "What is the purpose of the 'Result' and 'Counter' type parameters in the Filter<T, A> type?",
+      "answer": "The 'Result' type parameter in the Filter<T, A> type is used to store the filtered elements of type T that do not match the type A. The 'Counter' type parameter is used to keep track of the current index of the array being filtered."
+    },
+    {
+      "question": "What is the purpose of the conditional statement in the Filter<T, A> type?",
+      "answer": "The conditional statement in the Filter<T, A> type is used to check if the current element of type T matches the type A. If it does, it is filtered out and the 'Result' and 'Counter' type parameters are updated accordingly. If it does not, the 'Counter' type parameter is updated and the next element is checked."
+    },
+    {
+      "question": "Why is it necessary to add '[]' around the type in the conditional statement of the Filter<T, A> type?",
+      "answer": "It is necessary to add '[]' around the type in the conditional statement of the Filter<T, A> type to make it indistributive. This ensures that the type is evaluated for each element of the array being filtered, rather than just once for the entire array."
+    }
+  ]
+}

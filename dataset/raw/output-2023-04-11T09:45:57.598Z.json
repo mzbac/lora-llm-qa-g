@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is Shift<T> in TypeScript?",
+      "answer": "Shift<T> is a type that shifts the first item of a tuple type in TypeScript."
+    },
+    {
+      "question": "How do you implement Shift<T> in TypeScript?",
+      "answer": "To implement Shift<T> in TypeScript, you can use the following code: \n\n type Shift<T extends any[]> = T extends [infer F, ...infer R] ? R : []"
+    },
+    {
+      "question": "What is the purpose of Shift<T> in TypeScript?",
+      "answer": "The purpose of Shift<T> in TypeScript is to remove the first element of a tuple type and return the rest of the elements as a new tuple type."
+    },
+    {
+      "question": "What is infer in the implementation of Shift<T>?",
+      "answer": "Infer is a keyword in TypeScript that allows the inference of a type parameter from a given type. In the implementation of Shift<T>, infer is used to infer the type of the first element of the tuple type."
+    },
+    {
+      "question": "What is the result of Shift<[]> in TypeScript?",
+      "answer": "The result of Shift<[]> in TypeScript is an empty tuple type ([])."
+    },
+    {
+      "question": "What is the result of Shift<[string, number, boolean]> in TypeScript?",
+      "answer": "The result of Shift<[string, number, boolean]> in TypeScript is the tuple type [number, boolean]."
+    }
+  ]
+}

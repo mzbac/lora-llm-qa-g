@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the `Push` type in the `StringToNumber` implementation?",
+      "answer": "The `Push` type is used to add a new element to the end of an array. In the `StringToNumber` implementation, it is used to add a new digit to the number being constructed."
+    },
+    {
+      "question": "What is the purpose of the `Gen` type in the `StringToNumber` implementation?",
+      "answer": "The `Gen` type is used to generate an array of a given length filled with `unknown` values. In the `StringToNumber` implementation, it is used to generate arrays of digits with a length corresponding to the value being constructed."
+    },
+    {
+      "question": "What is the purpose of the `Plus` type in the `StringToNumber` implementation?",
+      "answer": "The `Plus` type is used to add two numbers together. In the `StringToNumber` implementation, it is used to add the current digit being constructed to the running total."
+    },
+    {
+      "question": "What is the purpose of the `Concat` type in the `StringToNumber` implementation?",
+      "answer": "The `Concat` type is used to concatenate two arrays. In the `StringToNumber` implementation, it is used to concatenate arrays of digits to construct the final number."
+    },
+    {
+      "question": "What is the purpose of the `Add` type in the `StringToNumber` implementation?",
+      "answer": "The `Add` type is used to add two numbers together. In the `StringToNumber` implementation, it is used to add the current digit being constructed to the running total."
+    },
+    {
+      "question": "What is the purpose of the `Multiply_` type in the `StringToNumber` implementation?",
+      "answer": "The `Multiply_` type is used to multiply two numbers together. In the `StringToNumber` implementation, it is used to multiply the current digit being constructed by the appropriate power of 10."
+    },
+    {
+      "question": "What is the purpose of the `Multiply` type in the `StringToNumber` implementation?",
+      "answer": "The `Multiply` type is used to multiply two numbers together. In the `StringToNumber` implementation, it is used to multiply the current digit being constructed by the appropriate power of 10."
+    },
+    {
+      "question": "What is the purpose of the `Mapping` type in the `StringToNumber` implementation?",
+      "answer": "The `Mapping` type is used to map each digit character to its corresponding numeric value. In the `StringToNumber` implementation, it is used to convert each digit character to its numeric value."
+    },
+    {
+      "question": "What is the purpose of the `CharToNumber` type in the `StringToNumber` implementation?",
+      "answer": "The `CharToNumber` type is used to convert a single digit character to its corresponding numeric value. In the `StringToNumber` implementation, it is used to convert each digit character to its numeric value."
+    },
+    {
+      "question": "What is the purpose of the `StringToNumber` type in the `StringToNumber` implementation?",
+      "answer": "The `StringToNumber` type is used to convert a string of digit characters to its corresponding numeric value. In the `StringToNumber` implementation, it is the main type that performs the conversion."
+    }
+  ]
+}

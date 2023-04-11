@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the InstanceType<Type> type in TypeScript?",
+      "answer": "The InstanceType<Type> type in TypeScript is used to extract the instance type of a constructor function type. It takes a constructor function type as a parameter and returns the type of the instance that the constructor function creates."
+    },
+    {
+      "question": "How is the InstanceType<Type> type implemented in TypeScript?",
+      "answer": "The InstanceType<Type> type is implemented in TypeScript using a conditional type that matches the return type of the constructor function type using the 'infer' keyword. The type parameter 'T' extends a constructor function type that takes any number of arguments. The conditional type checks if 'T' extends a constructor function type that returns a type 'U'. If it does, the type 'U' is returned as the instance type. If not, the 'never' type is returned."
+    },
+    {
+      "question": "Can the InstanceType<Type> type be used with non-constructor functions in TypeScript?",
+      "answer": "No, the InstanceType<Type> type can only be used with constructor functions in TypeScript. It is specifically designed to extract the instance type of a constructor function type and will not work with non-constructor functions."
+    },
+    {
+      "question": "How can the InstanceType<Type> type be used in a TypeScript program?",
+      "answer": "The InstanceType<Type> type can be used in a TypeScript program to extract the instance type of a constructor function type. For example, if we have a class 'Person' with a constructor that takes a string and a number as arguments, we can use the InstanceType<Type> type to extract the type of an instance of the 'Person' class as follows: \n\n```\nclass Person {\n  constructor(public name: string, public age: number) {}\n}\n\n// Extract the instance type of the Person class\ntype PersonType = InstanceType<typeof Person>;\n\n// PersonType is now equivalent to the type { name: string, age: number }\n```"
+    }
+  ]
+}

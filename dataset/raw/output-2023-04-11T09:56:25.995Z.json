@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Subtract<A, B> function?",
+      "answer": "The Subtract<A, B> function is used to subtract the value of B from the value of A and return the result."
+    },
+    {
+      "question": "How does the Subtract<A, B> function work?",
+      "answer": "The Subtract<A, B> function works by building a tuple with the size of A, then destructuring the tuple by inferring the tuple size of B and the rest elements’ tuple. The length of the inferred rest tuple will be the answer to the subtraction."
+    },
+    {
+      "question": "What is the purpose of the BuildTuple<N extends number, Tuple extends any[] = []> type?",
+      "answer": "The BuildTuple<N extends number, Tuple extends any[] = []> type is used to build a tuple with a specified length N."
+    },
+    {
+      "question": "What is the purpose of the '...tupleB:BuildTuple<B>, ...rest:infer Rest' syntax in the Subtract<A, B> function?",
+      "answer": "The '...tupleB:BuildTuple<B>, ...rest:infer Rest' syntax in the Subtract<A, B> function is used to destructure the tuple by inferring the tuple size of B and the rest elements’ tuple."
+    },
+    {
+      "question": "What is the return type of the Subtract<A, B> function?",
+      "answer": "The return type of the Subtract<A, B> function is either the length of the inferred rest tuple or 'never'."
+    }
+  ]
+}

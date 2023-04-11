@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Capitalize<T> type in TypeScript?",
+      "answer": "The Capitalize<T> type is used to transform the first character of a string type T to uppercase."
+    },
+    {
+      "question": "What is the syntax for defining a type in TypeScript?",
+      "answer": "The syntax for defining a type in TypeScript is using the 'type' keyword followed by the name of the type and its definition, which can include other types, values, and operators."
+    },
+    {
+      "question": "What is the difference between 'extends' and 'implements' keywords in TypeScript?",
+      "answer": "The 'extends' keyword is used to create a new type that extends an existing type, inheriting its properties and methods. The 'implements' keyword is used to define a class that implements an interface, which means it must provide implementations for all the methods defined in the interface."
+    },
+    {
+      "question": "What is the purpose of the 'infer' keyword in TypeScript?",
+      "answer": "The 'infer' keyword is used in conditional types to infer the type of a part of a type from another part of the same type. It allows creating more flexible and generic types that can adapt to different input types."
+    },
+    {
+      "question": "How does the MyCapitalize<T> type work?",
+      "answer": "The MyCapitalize<T> type uses a conditional type to split the input string type T into two parts: the first character (P) and the rest of the string (U). It then applies the Uppercase type to P to transform it to uppercase and concatenates it with U to form the capitalized string. If T is an empty string, it returns T as is."
+    }
+  ]
+}

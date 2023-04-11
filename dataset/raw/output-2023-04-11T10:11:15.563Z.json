@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the ObjectPaths type?",
+      "answer": "The ObjectPaths type is used to generate a union type of all possible paths in an object, where each path is represented as a string."
+    },
+    {
+      "question": "What is the constraint on the generic type parameter O in the ObjectPaths type?",
+      "answer": "The generic type parameter O must extend Record<string, any>, which means it must be an object with string keys and any values."
+    },
+    {
+      "question": "What is the purpose of the keyof keyword in the ObjectPaths type?",
+      "answer": "The keyof keyword is used to iterate over the keys of the object type O."
+    },
+    {
+      "question": "What is the purpose of the extends keyword in the ObjectPaths type?",
+      "answer": "The extends keyword is used to check if the value of a property in the object type O is itself an object with string keys and any values."
+    },
+    {
+      "question": "What is the purpose of the never keyword in the ObjectPaths type?",
+      "answer": "The never keyword is used to exclude any keys that do not meet the constraint of being a string from the resulting union type."
+    },
+    {
+      "question": "What is the purpose of the `${K}.${ObjectPaths<O[K]>}` syntax in the ObjectPaths type?",
+      "answer": "The `${K}.${ObjectPaths<O[K]>}` syntax is used to recursively generate the paths of nested objects in the resulting union type."
+    }
+  ]
+}

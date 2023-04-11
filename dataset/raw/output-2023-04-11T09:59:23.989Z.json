@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is UnionToIntersection<T> in TypeScript?",
+      "answer": "UnionToIntersection<T> is a type that takes a union type and returns an intersection type of all the types in the union."
+    },
+    {
+      "question": "What is the purpose of WrapNakedTypeWithFunction<T> in the implementation of UnionToIntersection<T>?",
+      "answer": "WrapNakedTypeWithFunction<T> is a helper type that wraps the naked type T with a function type that takes an argument of type T and returns void. This is necessary to convert the union type into an intersection type."
+    },
+    {
+      "question": "How does UnionToIntersection<T> convert a union type into an intersection type?",
+      "answer": "UnionToIntersection<T> converts a union type into an intersection type by using conditional types and the helper type WrapNakedTypeWithFunction<T>. It checks if WrapNakedTypeWithFunction<T> can be assigned to a function type that takes an argument of type infer U and returns void. If it can, it returns the inferred type U, which is the intersection of all the types in the union."
+    },
+    {
+      "question": "Can UnionToIntersection<T> be used with any type of union?",
+      "answer": "Yes, UnionToIntersection<T> can be used with any type of union, including unions of object types, primitive types, and other types."
+    },
+    {
+      "question": "What are some use cases for UnionToIntersection<T>?",
+      "answer": "UnionToIntersection<T> can be used in situations where a function or method needs to accept multiple types as arguments or return types. It can also be used to create more complex types by combining simpler types."
+    }
+  ]
+}

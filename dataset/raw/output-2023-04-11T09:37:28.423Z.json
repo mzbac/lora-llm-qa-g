@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the LastItem<T> type in TypeScript?",
+      "answer": "The LastItem<T> type in TypeScript is used to extract the last element type from an array type T."
+    },
+    {
+      "question": "How does the LastItem<T> type work in TypeScript?",
+      "answer": "The LastItem<T> type uses conditional types and the infer keyword to extract the last element type from an array type T. It does this by inferring the rest of the array elements as a tuple type and then getting the type of the last element."
+    },
+    {
+      "question": "What is a conditional type in TypeScript?",
+      "answer": "A conditional type in TypeScript is a type that depends on a condition. It is defined using the syntax T extends U ? X : Y, where T is the type being checked, U is the type being compared to, X is the type returned if the condition is true, and Y is the type returned if the condition is false."
+    },
+    {
+      "question": "What is the infer keyword in TypeScript?",
+      "answer": "The infer keyword in TypeScript is used in conditional types to infer a type from another type. It is used in the syntax ...infer Name to infer a type from a tuple or union type."
+    },
+    {
+      "question": "How can the LastItem<T> type be used in TypeScript?",
+      "answer": "The LastItem<T> type can be used to extract the last element type from an array type T. This can be useful in situations where you need to work with the last element of an array, such as when implementing a stack or queue data structure."
+    }
+  ]
+}

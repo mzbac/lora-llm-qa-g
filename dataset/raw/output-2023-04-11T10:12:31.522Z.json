@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the MapStringUnionToObjectUnion type?",
+      "answer": "The purpose of the MapStringUnionToObjectUnion type is to map a string union type to an object union type where each object has a single property with the value of the corresponding string in the union."
+    },
+    {
+      "question": "What is the syntax for defining the MapStringUnionToObjectUnion type?",
+      "answer": "The syntax for defining the MapStringUnionToObjectUnion type is:\n\ntype MapStringUnionToObjectUnion<U extends string> = U extends string ? {value: U} : never"
+    },
+    {
+      "question": "What is the meaning of the 'extends string' constraint in the MapStringUnionToObjectUnion type definition?",
+      "answer": "The 'extends string' constraint in the MapStringUnionToObjectUnion type definition ensures that the type parameter U is a string union type, i.e., a type that is a union of string literals."
+    },
+    {
+      "question": "What is the purpose of the conditional type in the MapStringUnionToObjectUnion type definition?",
+      "answer": "The purpose of the conditional type in the MapStringUnionToObjectUnion type definition is to transform each string literal in the union type U into an object type with a single property 'value' whose value is the string literal."
+    },
+    {
+      "question": "What is the return type of the MapStringUnionToObjectUnion type?",
+      "answer": "The return type of the MapStringUnionToObjectUnion type is a union of object types, each of which has a single property 'value' with the value of a string literal in the input union type U."
+    },
+    {
+      "question": "How can you use the MapStringUnionToObjectUnion type?",
+      "answer": "You can use the MapStringUnionToObjectUnion type to map a string union type to an object union type, for example:\n\ntype MyStringUnion = 'foo' | 'bar' | 'baz';\n\ntype MyObjectUnion = MapStringUnionToObjectUnion<MyStringUnion>;\n\n// MyObjectUnion is equivalent to:\n// {value: 'foo'} | {value: 'bar'} | {value: 'baz'}"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the LengthOfString<T> type?",
+      "answer": "The purpose of the LengthOfString<T> type is to calculate the length of a given string at compile-time and return it as a numeric literal type."
+    },
+    {
+      "question": "How does the StringToTuple<T> type work?",
+      "answer": "The StringToTuple<T> type recursively splits a string into a tuple of its individual characters. It does this by using conditional types and template literal types to split the string into its first character and the rest of the string, and then recursively calling itself on the rest of the string until the entire string has been split into a tuple."
+    },
+    {
+      "question": "Why can't the LengthOfString<T> type be written as `type LengthOfString<T extends string> = T extends `${infer L}${infer R}` ? [L, ...LengthOfString<R>]['length'] : []`?",
+      "answer": "The LengthOfString<T> type cannot be written as `type LengthOfString<T extends string> = T extends `${infer L}${infer R}` ? [L, ...LengthOfString<R>]['length'] : []` because TypeScript's lazy evaluation of types will return a number rather than a numeric literal, which is required for the type to be used in other type calculations."
+    },
+    {
+      "question": "What is a numeric literal type in TypeScript?",
+      "answer": "A numeric literal type in TypeScript is a type that represents a specific numeric value, such as `1` or `42`. Numeric literal types are useful for creating more precise types and for performing compile-time calculations."
+    },
+    {
+      "question": "What are conditional types in TypeScript?",
+      "answer": "Conditional types in TypeScript are types that depend on a condition. They are created using the `extends` keyword and can be used to create more complex types that vary based on the input type. Conditional types are often used in generic types to create more flexible and reusable code."
+    }
+  ]
+}

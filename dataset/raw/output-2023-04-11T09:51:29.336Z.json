@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Filter<T, A> type in TypeScript?",
+      "answer": "The purpose of the Filter<T, A> type in TypeScript is to return a new tuple type by filtering all the types from T that are assignable to A."
+    },
+    {
+      "question": "How can we implement the Filter<T, A> type in TypeScript?",
+      "answer": "We can implement the Filter<T, A> type in TypeScript by using two tuples: one for the result and another for the counter in order to recursively go through the given tuple. We just have to make an additional check at each iteration; if the element extends type A, then it will be put into a result array otherwise it will be skipped. Keep in mind that given T tuple may have distributive types as elements so when checking them they need to be made indistributive."
+    },
+    {
+      "question": "What is the purpose of the Result and Counter type parameters in the Filter<T, A> type?",
+      "answer": "The Result and Counter type parameters in the Filter<T, A> type are used to keep track of the filtered elements and the current index in the tuple respectively. Result is initialized as an empty array and Counter is initialized as an empty array of unknown types. They are both recursively updated until all elements in the tuple have been checked."
+    },
+    {
+      "question": "Why do we need to make distributive types indistributive when checking them in the Filter<T, A> type?",
+      "answer": "We need to make distributive types indistributive when checking them in the Filter<T, A> type because distributive types can cause unexpected behavior when used in conditional types. By making them indistributive, we ensure that each element in the tuple is checked individually and the type check is not applied to the entire tuple at once."
+    },
+    {
+      "question": "Can the Filter<T, A> type be used with any type of tuple?",
+      "answer": "Yes, the Filter<T, A> type can be used with any type of tuple as long as the elements in the tuple are assignable to the type parameter T and the type parameter A."
+    }
+  ]
+}

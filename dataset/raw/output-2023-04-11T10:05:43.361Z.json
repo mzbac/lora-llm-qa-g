@@ -1,0 +1,36 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Sort<T> implementation in TypeScript?",
+      "answer": "The Sort<T> implementation in TypeScript is used to sort an array of elements of type T in ascending order."
+    },
+    {
+      "question": "What is the LessThan<A,B,T> type in the Sort<T> implementation?",
+      "answer": "The LessThan<A,B,T> type is a conditional type that checks if the length of T is less than B and greater than or equal to A. It returns a boolean value indicating whether A is less than B."
+    },
+    {
+      "question": "What is the Smallest<T,S> type in the Sort<T> implementation?",
+      "answer": "The Smallest<T,S> type is a conditional type that recursively finds the smallest element in an array of type T and returns it as type S."
+    },
+    {
+      "question": "What is the RemoveFirstOccurence<T,N,R> type in the Sort<T> implementation?",
+      "answer": "The RemoveFirstOccurence<T,N,R> type is a conditional type that removes the first occurrence of element N from an array of type T and returns the resulting array as type R."
+    },
+    {
+      "question": "What is the Sort<T,Sorted> type in the Sort<T> implementation?",
+      "answer": "The Sort<T,Sorted> type is a conditional type that recursively sorts an array of type T by finding the smallest element using the Smallest<T,S> type, removing it using the RemoveFirstOccurence<T,N,R> type, and adding it to the Sorted array until the original array is empty. The resulting sorted array is of type Sorted."
+    },
+    {
+      "question": "What is a conditional type in TypeScript?",
+      "answer": "A conditional type in TypeScript is a type that depends on a condition. It is defined using the 'extends' keyword and can be used to create complex types that vary based on the input types."
+    },
+    {
+      "question": "What is the infer keyword in TypeScript?",
+      "answer": "The infer keyword in TypeScript is used in conditional types to infer the type of a generic parameter from a given input type."
+    },
+    {
+      "question": "What is the purpose of the Spread operator (...) in TypeScript?",
+      "answer": "The Spread operator (...) in TypeScript is used to spread the elements of an array or object into another array or object. It is commonly used to concatenate arrays or to create a copy of an array or object with additional elements."
+    }
+  ]
+}

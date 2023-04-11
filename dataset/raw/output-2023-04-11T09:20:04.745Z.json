@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Partial<Type> type in TypeScript?",
+      "answer": "The Partial<Type> type in TypeScript is used to create a new type that has all the properties of the original type as optional. This means that each property of the new type can be undefined or have the same type as the corresponding property in the original type."
+    },
+    {
+      "question": "How does the Partial<Type> type work in TypeScript?",
+      "answer": "The Partial<Type> type in TypeScript works by using a mapped type. It creates a new type by iterating over each property of the original type using the keyof operator. For each property, it creates a new property with the same name and type, but with the optional modifier (?) added. This makes each property optional in the new type."
+    },
+    {
+      "question": "What is the key modifier in the Partial<Type> type?",
+      "answer": "The key modifier in the Partial<Type> type is the question mark (?) symbol. It is added to each property in the new type to make them optional. This means that each property can be undefined or have the same type as the corresponding property in the original type."
+    },
+    {
+      "question": "Can the Partial<Type> type be used with any type in TypeScript?",
+      "answer": "Yes, the Partial<Type> type can be used with any type in TypeScript. It is a generic type that takes a type parameter, which can be any type. The resulting type will have all the properties of the original type as optional."
+    },
+    {
+      "question": "How can the Partial<Type> type be used in practice?",
+      "answer": "The Partial<Type> type can be used in practice to create new types that have optional properties. This can be useful when working with APIs that return objects with optional properties, or when creating forms that have optional fields. Here is an example of how it can be used:\n\ninterface User {\n  name: string;\n  age: number;\n  email: string;\n}\n\n// Create a new type with optional properties\ntype PartialUser = Partial<User>;\n\n// Usage\nconst user: PartialUser = { name: 'John' }; // age and email are optional"
+    }
+  ]
+}

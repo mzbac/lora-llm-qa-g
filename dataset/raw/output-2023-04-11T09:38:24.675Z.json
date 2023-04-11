@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the IsNever<T> type in TypeScript?",
+      "answer": "The IsNever<T> type is used to determine if a type T is assignable to the 'never' type. It returns a boolean value indicating whether or not the type is 'never'."
+    },
+    {
+      "question": "How does the IsNever<T> type work?",
+      "answer": "The IsNever<T> type uses conditional types to check if the type T extends the 'never' type. If it does, then the type is considered to be 'never' and the type returns true. Otherwise, it returns false."
+    },
+    {
+      "question": "Can you provide an example of using the IsNever<T> type?",
+      "answer": "Yes, here is an example:\n\n```\ntype Foo = string | never;\n\ntype IsFooNever = IsNever<Foo>; // returns false\n```In this example, the type Foo is a union of string and never. The IsNever type is used to check if the type is 'never', which it is not, so the IsFooNever type returns false."
+    },
+    {
+      "question": "What are conditional types in TypeScript?",
+      "answer": "Conditional types in TypeScript are types that depend on a condition. They are defined using the 'extends' keyword and can be used to create complex types based on the properties of other types."
+    },
+    {
+      "question": "What is the syntax for defining a conditional type in TypeScript?",
+      "answer": "The syntax for defining a conditional type in TypeScript is:\n\n```\ntype MyType<T> = T extends SomeCondition ? TrueType : FalseType;\n```Where 'SomeCondition' is the condition that the type T must satisfy, 'TrueType' is the type that is returned if the condition is true, and 'FalseType' is the type that is returned if the condition is false."
+    }
+  ]
+}

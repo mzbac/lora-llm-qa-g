@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the ReturnType<Type> type in TypeScript?",
+      "answer": "The ReturnType<Type> type in TypeScript is used to infer and extract the return type of a function type. It takes a function type as its argument and returns the type of the value that the function returns."
+    },
+    {
+      "question": "How can you implement the ReturnType<Type> type in TypeScript?",
+      "answer": "You can implement the ReturnType<Type> type in TypeScript using a conditional type that matches the return type of the function. Here's an example implementation: \n\n type MyReturnType<T extends (...arg:any)=>any> = T extends (...arg:any) => infer U ? U :never"
+    },
+    {
+      "question": "What is conditional function type in TypeScript?",
+      "answer": "Conditional types in TypeScript are used to conditionally choose one type or another based on a condition that can be evaluated at compile-time. In the context of function types, conditional types can be used to extract or infer the return type of a function based on its argument types."
+    },
+    {
+      "question": "What is the purpose of the infer keyword in TypeScript?",
+      "answer": "The infer keyword in TypeScript is used in conditional types to infer a type from another type. It allows you to extract a type from a more complex type, such as a function type, and use it in a conditional type."
+    },
+    {
+      "question": "Can you provide an example of using ReturnType<Type> with a function?",
+      "answer": "Yes, here's an example of using ReturnType<Type> with a function: \n\n function add(a: number, b: number): number { \n   return a + b; \n } \n \n type AddReturnType = ReturnType<typeof add>; \n // AddReturnType is number"
+    }
+  ]
+}

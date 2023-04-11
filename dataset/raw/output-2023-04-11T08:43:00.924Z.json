@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Add<A, B> type?",
+      "answer": "The Add<A, B> type is used to calculate the sum of two numbers represented as type parameters A and B, respectively."
+    },
+    {
+      "question": "What is the Tuple<T, U> type used for in the implementation of Add<A, B>?",
+      "answer": "The Tuple<T, U> type is used to create a tuple of length T, where the type of each element is any. U is an optional parameter used to build the tuple recursively."
+    },
+    {
+      "question": "What is the purpose of the [...Tuple<A>, ...Tuple<B>]['length'] expression in the implementation of Add<A, B>?",
+      "answer": "The purpose of the expression is to calculate the length of a new tuple created by concatenating two tuples of lengths A and B, respectively. The resulting length is equal to the sum of A and B."
+    },
+    {
+      "question": "Why is the type parameter U in Tuple<T, U> constrained to any[]?",
+      "answer": "The type parameter U in Tuple<T, U> is constrained to any[] because it represents the type of the tuple being created. By default, an empty array [] is used as the initial value of U, and elements of type any are added to it until it reaches the desired length T."
+    },
+    {
+      "question": "How would you use the Add<A, B> type to calculate the sum of two numbers?",
+      "answer": "To use the Add<A, B> type, you would replace the type parameters A and B with the actual numbers you want to add. For example, to add 2 and 3, you would use the type Add<2, 3>, which evaluates to the number 5."
+    }
+  ]
+}

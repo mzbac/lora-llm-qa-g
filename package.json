@@ -1,0 +1,16 @@
+{
+  "name": "lora-llm-qa-g",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsx generate_qa_pairs.ts",
+    "process-outputs": "npx tsx process-outputs.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.3.5"
+  }
+}

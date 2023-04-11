@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the ReplaceAll type in TypeScript?",
+      "answer": "The ReplaceAll type in TypeScript is used to replace all occurrences of a substring (F) in a string (S) with another substring (T), similar to the String.prototype.replaceAll() method in JavaScript."
+    },
+    {
+      "question": "What are the three type parameters used in the ReplaceAll type?",
+      "answer": "The three type parameters used in the ReplaceAll type are S (the input string), F (the substring to be replaced), and T (the substring to replace F with)."
+    },
+    {
+      "question": "What is the purpose of the conditional statement in the ReplaceAll type?",
+      "answer": "The conditional statement in the ReplaceAll type checks if the substring to be replaced (F) is an empty string. If it is, the original string (S) is returned. If it is not, the type recursively replaces all occurrences of F with T in S."
+    },
+    {
+      "question": "How does the ReplaceAll type handle overlapping substrings?",
+      "answer": "The ReplaceAll type handles overlapping substrings by using a combination of template literal types and conditional types to ensure that all occurrences of F in S are replaced with T, even if they overlap."
+    },
+    {
+      "question": "Can the ReplaceAll type be used with other data types besides strings?",
+      "answer": "No, the ReplaceAll type is specifically designed to work with strings and cannot be used with other data types in TypeScript."
+    }
+  ]
+}

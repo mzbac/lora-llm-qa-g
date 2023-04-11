@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is LargerThan in TypeScript?",
+      "answer": "LargerThan is a type that compares two non-negative integers and returns a boolean value indicating whether the first number is larger than the second number."
+    },
+    {
+      "question": "How does LargerThan work in TypeScript?",
+      "answer": "LargerThan works by using a tuple as a counter. It recursively compares two numbers, and whoever reaches the counter's length first will be the smaller number. If both numbers don't reach the counter, the counter is increased, and the comparison continues."
+    },
+    {
+      "question": "What is the purpose of the Counter parameter in LargerThan?",
+      "answer": "The Counter parameter in LargerThan is used to keep track of the length of the numbers being compared. It is implemented as a tuple and is used to determine which number is smaller by checking which number reaches the counter's length first."
+    },
+    {
+      "question": "Can LargerThan compare negative numbers?",
+      "answer": "No, LargerThan can only compare non-negative numbers. If negative numbers are used, the behavior of LargerThan is undefined."
+    },
+    {
+      "question": "How can LargerThan be used in TypeScript?",
+      "answer": "LargerThan can be used to compare two non-negative numbers in TypeScript. It can be useful in situations where you need to determine which number is larger, such as sorting algorithms or data analysis."
+    }
+  ]
+}

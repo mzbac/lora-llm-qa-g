@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the FindIndex<T, E> implementation in TypeScript?",
+      "answer": "The FindIndex<T, E> implementation in TypeScript is used to find the index of the first occurrence of a given element E in an array of type T."
+    },
+    {
+      "question": "What is the IsAny<T> type in the FindIndex<T, E> implementation?",
+      "answer": "The IsAny<T> type in the FindIndex<T, E> implementation is a type guard that checks if the type T is 'any'."
+    },
+    {
+      "question": "What is the IsNever<T> type in the FindIndex<T, E> implementation?",
+      "answer": "The IsNever<T> type in the FindIndex<T, E> implementation is a type guard that checks if the type T is 'never'."
+    },
+    {
+      "question": "What is the IsEqual_<T, R> type in the FindIndex<T, E> implementation?",
+      "answer": "The IsEqual_<T, R> type in the FindIndex<T, E> implementation is a type guard that checks if the types T and R are equal."
+    },
+    {
+      "question": "What is the purpose of the S parameter in the FindIndex<A, T, S extends any[] = []> implementation?",
+      "answer": "The S parameter in the FindIndex<A, T, S extends any[] = []> implementation is used to keep track of the indices of the elements in the array that have been checked so far."
+    },
+    {
+      "question": "What is the purpose of the A parameter in the FindIndex<A, T, S extends any[] = []> implementation?",
+      "answer": "The A parameter in the FindIndex<A, T, S extends any[] = []> implementation is the array of type T in which the element E needs to be found."
+    },
+    {
+      "question": "What is the purpose of the T parameter in the FindIndex<A, T, S extends any[] = []> implementation?",
+      "answer": "The T parameter in the FindIndex<A, T, S extends any[] = []> implementation is the element of type T that needs to be found in the array A."
+    },
+    {
+      "question": "What is the purpose of the R1 and R2 variables in the FindIndex<A, T, S extends any[] = []> implementation?",
+      "answer": "The R1 and R2 variables in the FindIndex<A, T, S extends any[] = []> implementation are used to destructure the array A into its first element R1 and the rest of the array R2."
+    },
+    {
+      "question": "What is the purpose of the spread operator in the FindIndex<R2, T, [...S, 0]> expression?",
+      "answer": "The spread operator in the FindIndex<R2, T, [...S, 0]> expression is used to concatenate the current index S with a new index 0 and pass it as the S parameter to the next recursive call of the FindIndex function."
+    }
+  ]
+}

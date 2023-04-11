@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Parameters<Type> type in TypeScript?",
+      "answer": "The Parameters<Type> type in TypeScript is used to extract the parameter types of a given function type."
+    },
+    {
+      "question": "How does the Parameters<Type> type work in TypeScript?",
+      "answer": "The Parameters<Type> type in TypeScript works by using a conditional function type and the infer keyword to match the parameter types of a given function type."
+    },
+    {
+      "question": "Can the Parameters<Type> type be used with arrow functions in TypeScript?",
+      "answer": "Yes, the Parameters<Type> type can be used with arrow functions in TypeScript as long as the arrow function is of type Function."
+    },
+    {
+      "question": "What happens if the input to Parameters<Type> is not a function type in TypeScript?",
+      "answer": "If the input to Parameters<Type> is not a function type in TypeScript, the type checker will throw an error."
+    },
+    {
+      "question": "Can the Parameters<Type> type be used with generic function types in TypeScript?",
+      "answer": "Yes, the Parameters<Type> type can be used with generic function types in TypeScript as long as the generic function type extends the Function type."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of implementing IsEmptyType<T> in TypeScript?",
+      "answer": "The purpose of implementing IsEmptyType<T> in TypeScript is to check if T is an empty type {}."
+    },
+    {
+      "question": "What are the three confusing types in TypeScript that are important to understand for implementing IsEmptyType<T>?",
+      "answer": "The three confusing types in TypeScript that are important to understand for implementing IsEmptyType<T> are Object, {} and object. Object contains stuff that is present in all JavaScript objects, {} is an empty object, and object is any non-primitive type."
+    },
+    {
+      "question": "What is the difference between Object and {} in TypeScript?",
+      "answer": "In TypeScript, Object contains stuff that is present in all JavaScript objects, and any value (primitive, non-primitive) can be assigned to Object type. {} is an empty object, and it is pretty much the same as Object in runtime but different in compile time. In compile time, {} doesn't have Object's members and Object has more strict behavior."
+    },
+    {
+      "question": "What is the purpose of the object type in TypeScript?",
+      "answer": "The purpose of the object type in TypeScript is to represent any non-primitive type. You can't assign to it any primitive type like bool, number, string, symbol."
+    },
+    {
+      "question": "How can we implement IsEmptyType<T> in TypeScript?",
+      "answer": "We can implement IsEmptyType<T> in TypeScript by checking if any primitive can be assigned to T and checking if the key of T is never. If the key of T is never, then it means it’s an empty object. Here is an example implementation: type IsEmptyType<T> = string extends T ? [keyof T] extends [never] ? true : false : false."
+    }
+  ]
+}

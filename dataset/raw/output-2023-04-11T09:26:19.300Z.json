@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Extract type in TypeScript?",
+      "answer": "The Extract type in TypeScript is used to extract a subset of types from a union type based on a given condition."
+    },
+    {
+      "question": "What is the syntax for using the Extract type in TypeScript?",
+      "answer": "The syntax for using the Extract type in TypeScript is: `Extract<Type, Union>`."
+    },
+    {
+      "question": "What is the difference between the Extract type and the Exclude type in TypeScript?",
+      "answer": "The Extract type in TypeScript extracts a subset of types from a union type based on a given condition, while the Exclude type removes a subset of types from a union type based on a given condition."
+    },
+    {
+      "question": "How does the Extract type work in TypeScript?",
+      "answer": "The Extract type in TypeScript works by checking each type in the union type against the given condition. If the type satisfies the condition, it is included in the resulting subset type. If not, it is excluded."
+    },
+    {
+      "question": "Can the Extract type be used with any type of condition in TypeScript?",
+      "answer": "Yes, the Extract type in TypeScript can be used with any type of condition that can be evaluated at compile-time."
+    },
+    {
+      "question": "What is the return type of the Extract type in TypeScript?",
+      "answer": "The return type of the Extract type in TypeScript is a union type that includes only the types that satisfy the given condition."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the CamelCase<S> type in TypeScript?",
+      "answer": "The CamelCase<S> type in TypeScript is used to convert a string to camel case format. It takes a string type S as input and returns the camel case version of that string."
+    },
+    {
+      "question": "What are the type parameters of the CamelCase<S> type in TypeScript?",
+      "answer": "The CamelCase<S> type in TypeScript has three type parameters: S, L, and R. S is the input string that needs to be converted to camel case. L is an optional type parameter that represents the left part of the string being processed. R is an optional type parameter that represents the right part of the string being processed."
+    },
+    {
+      "question": "How does the CamelCase<S> type in TypeScript work?",
+      "answer": "The CamelCase<S> type in TypeScript works by recursively processing the input string S and building the camel case version of the string. It does this by splitting the input string into two parts: the left part (L) and the right part (R). It then checks if the left part starts with an underscore. If it does, it converts the first character of the right part to uppercase and appends it to the right part. If it doesn't start with an underscore, it simply appends the left part to the right part. This process is repeated until the entire input string has been processed."
+    },
+    {
+      "question": "What is the purpose of the Uppercase<P> type in the CamelCase<S> type in TypeScript?",
+      "answer": "The Uppercase<P> type in the CamelCase<S> type in TypeScript is used to convert the first character of the left part of the string to uppercase. This is necessary to convert the string to camel case format."
+    },
+    {
+      "question": "Can the CamelCase<S> type in TypeScript be used to convert any string to camel case format?",
+      "answer": "Yes, the CamelCase<S> type in TypeScript can be used to convert any string to camel case format. However, it is important to note that the type is recursive and may not be suitable for very long strings as it may cause a stack overflow error."
+    }
+  ]
+}

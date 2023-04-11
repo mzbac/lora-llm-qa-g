@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of RepeatString<T, C> in TypeScript?",
+      "answer": "The purpose of RepeatString<T, C> in TypeScript is to create a new type by repeating string T for C times."
+    },
+    {
+      "question": "How is a tuple used in RepeatString<T, C>?",
+      "answer": "A tuple is used in RepeatString<T, C> as a counter for math-related types. It is used to count the repetitions so that we will know when it matches the desired outcome."
+    },
+    {
+      "question": "How is the length of the tuple used in RepeatString<T, C>?",
+      "answer": "The length of the tuple is used in RepeatString<T, C> to check if it matches the desired number of times. If the length of the tuple matches C, then the result is returned. Otherwise, the string T is repeated and the tuple is incremented until the desired number of repetitions is reached."
+    },
+    {
+      "question": "What is the purpose of the Result and Counter variables in RepeatString<T, C>?",
+      "answer": "The Result variable in RepeatString<T, C> is used to store the repeated string. The Counter variable is used to store the tuple that counts the number of repetitions."
+    },
+    {
+      "question": "What is the syntax for defining a default value for a generic type parameter in TypeScript?",
+      "answer": "The syntax for defining a default value for a generic type parameter in TypeScript is to use the equals sign followed by the default value. For example, `type MyType<T = string> = T[]` defines a type MyType that takes a generic type parameter T with a default value of string."
+    }
+  ]
+}

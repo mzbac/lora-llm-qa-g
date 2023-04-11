@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Push<T, I> type in TypeScript?",
+      "answer": "The Push<T, I> type is used to return a new type by pushing a new type into a tuple type."
+    },
+    {
+      "question": "What is the syntax for defining the Push<T, I> type in TypeScript?",
+      "answer": "The syntax for defining the Push<T, I> type in TypeScript is: type Push<T extends any[], I> = [...T, I]"
+    },
+    {
+      "question": "What is the meaning of the extends keyword in the Push<T, I> type definition?",
+      "answer": "The extends keyword in the Push<T, I> type definition is used to specify that the type parameter T must extend the array type any[]."
+    },
+    {
+      "question": "What is the purpose of the any[] type in the Push<T, I> type definition?",
+      "answer": "The any[] type in the Push<T, I> type definition is used to specify that the type parameter T must be an array type."
+    },
+    {
+      "question": "What is the purpose of the I type in the Push<T, I> type definition?",
+      "answer": "The I type in the Push<T, I> type definition is used to specify the type of the element that will be added to the end of the tuple type."
+    },
+    {
+      "question": "Can the Push<T, I> type be used to add multiple elements to a tuple type?",
+      "answer": "No, the Push<T, I> type can only be used to add a single element to a tuple type."
+    }
+  ]
+}

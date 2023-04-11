@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the ToNumber<T> type in TypeScript?",
+      "answer": "The ToNumber<T> type is used to convert a string literal type to a numeric literal type in TypeScript."
+    },
+    {
+      "question": "How does the ToNumber<T> type work?",
+      "answer": "The ToNumber<T> type uses a recursive conditional type to count the number of elements in a tuple of numbers until it matches the length of the input string literal type. It then returns the length of the tuple as a numeric literal type."
+    },
+    {
+      "question": "What is a recursive conditional type in TypeScript?",
+      "answer": "A recursive conditional type is a type that refers to itself in its own definition and uses a conditional statement to determine its final type. It is often used to create complex types that depend on other types."
+    },
+    {
+      "question": "What is a tuple in TypeScript?",
+      "answer": "A tuple in TypeScript is an array with a fixed number of elements, where each element may have a different type. Tuples are often used to represent a collection of values with a specific order and type."
+    },
+    {
+      "question": "What is a string literal type in TypeScript?",
+      "answer": "A string literal type in TypeScript is a type that represents a specific string value, rather than any string value. It is often used to create more precise types for function parameters, object keys, and other values."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the SmallerThan<A, B> type in TypeScript?",
+      "answer": "The SmallerThan<A, B> type is used to compare two positive integers A and B and determine if A is smaller than B."
+    },
+    {
+      "question": "What is the edge case that needs to be considered when implementing SmallerThan<A, B>?",
+      "answer": "The edge case that needs to be considered is when A is equal to B. In this case, the solution should return false."
+    },
+    {
+      "question": "How does the SmallerThan<A, B> type work?",
+      "answer": "The SmallerThan<A, B> type uses conditional types to recursively compare the length of two tuples of unknown type. If A is equal to B, the type returns false. If A is smaller than B, the type returns true. If B is smaller than A, the type returns false."
+    },
+    {
+      "question": "What is the purpose of the Counter parameter in the SmallerThan<A, B> type?",
+      "answer": "The Counter parameter is used to keep track of the length of the tuples being compared. It starts as an empty array and is recursively spread with the unknown type until it reaches the length of A or B."
+    },
+    {
+      "question": "Can the SmallerThan<A, B> type be used to compare negative integers?",
+      "answer": "No, the SmallerThan<A, B> type can only be used to compare positive integers. It relies on the length of tuples, which cannot be negative."
+    }
+  ]
+}

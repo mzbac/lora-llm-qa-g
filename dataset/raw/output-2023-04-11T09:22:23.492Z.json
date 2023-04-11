@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Readonly<Type> type in TypeScript?",
+      "answer": "The Readonly<Type> type in TypeScript is used to create a new type where all properties of the original type are made readonly. This means that the properties cannot be reassigned or modified after they are initialized."
+    },
+    {
+      "question": "How is the Readonly<Type> type implemented in TypeScript?",
+      "answer": "The Readonly<Type> type is implemented using a mapped type. The mapped type iterates over all properties of the original type and adds the readonly modifier to each property."
+    },
+    {
+      "question": "Can the properties of a type created using Readonly<Type> be modified after initialization?",
+      "answer": "No, the properties of a type created using Readonly<Type> cannot be modified after initialization. They are readonly and can only be accessed for reading purposes."
+    },
+    {
+      "question": "What is the syntax for using the Readonly<Type> type in TypeScript?",
+      "answer": "The syntax for using the Readonly<Type> type in TypeScript is as follows: \n\n```\n type Readonly<T> = {\n   readonly[k in keyof T]: T[k]\n }\n```"
+    },
+    {
+      "question": "Can the Readonly<Type> type be used with nested objects?",
+      "answer": "Yes, the Readonly<Type> type can be used with nested objects. It will make all properties of the nested objects readonly as well."
+    }
+  ]
+}

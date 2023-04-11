@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Split<S, D> type in TypeScript?",
+      "answer": "The Split<S, D> type is used to split a string type S into an array of string types, using a delimiter D."
+    },
+    {
+      "question": "What are the constraints on the Split<S, D> type parameters?",
+      "answer": "The S and D parameters must be string types, and the R parameter must be an array of string types."
+    },
+    {
+      "question": "What is the purpose of the R parameter in the Split<S, D> type?",
+      "answer": "The R parameter is used to accumulate the split parts of the string into an array of string types."
+    },
+    {
+      "question": "How does the Split<S, D> type work?",
+      "answer": "The Split<S, D> type uses conditional types to split the string type S into two parts, using the delimiter D. It then recursively calls itself on the second part of the string until there are no more delimiters. The split parts of the string are accumulated into an array of string types using the R parameter."
+    },
+    {
+      "question": "Can the Split<S, D> type be used with any delimiter?",
+      "answer": "Yes, the Split<S, D> type can be used with any delimiter that is a string type."
+    },
+    {
+      "question": "How can the Split<S, D> type be used in practice?",
+      "answer": "The Split<S, D> type can be used to split a string type into an array of string types, which can be useful for parsing input data or manipulating strings in various ways."
+    }
+  ]
+}

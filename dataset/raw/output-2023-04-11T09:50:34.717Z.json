@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is TupleToString in TypeScript?",
+      "answer": "TupleToString is a type that concatenates all the strings in a tuple to a new string type."
+    },
+    {
+      "question": "What is the syntax for defining TupleToString in TypeScript?",
+      "answer": "The syntax for defining TupleToString in TypeScript is: type TupleToString<T extends string[], Result extends string = '', Counter extends any[] = []> = ..."
+    },
+    {
+      "question": "What is the purpose of the Counter parameter in TupleToString?",
+      "answer": "The Counter parameter in TupleToString is used as a counter to check when we have recursively gone through all the strings in the tuple."
+    },
+    {
+      "question": "How is the length of the tuple used in TupleToString?",
+      "answer": "The length of the tuple is used as an index to read from a string tuple in TupleToString."
+    },
+    {
+      "question": "What is the purpose of the unknown type in TupleToString?",
+      "answer": "The unknown type in TupleToString is used to add a new element to the Counter array on each recursive call."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the `Awaited<Type>` type in TypeScript?",
+      "answer": "The `Awaited<Type>` type in TypeScript is used to unwrap the type of a promise and return the resolved value. It is similar to the `ReturnType` utility type, but instead of returning the return type of a function, it returns the resolved type of a promise."
+    },
+    {
+      "question": "What is the syntax for defining the `Awaited<Type>` type in TypeScript?",
+      "answer": "The syntax for defining the `Awaited<Type>` type in TypeScript is:\n\n```\ntype Awaited<T> =\n    T extends null | undefined ? T :\n        T extends object & { then(onfulfilled: infer F, ...args: infer _): any } ?\n            F extends ((value: infer V, ...args: infer _) => any) ?\n                Awaited<V> :\n                never :\n        T;\n```"
+    },
+    {
+      "question": "What is the purpose of the `infer` keyword in the definition of the `Awaited<Type>` type?",
+      "answer": "The `infer` keyword in the definition of the `Awaited<Type>` type is used to infer the type of a generic parameter from its usage in a conditional type. In the case of `Awaited<Type>`, it is used to infer the resolved type of a promise from its usage in the `then` method of an object."
+    },
+    {
+      "question": "What is the purpose of the `never` type in the definition of the `Awaited<Type>` type?",
+      "answer": "The `never` type in the definition of the `Awaited<Type>` type is used to indicate that a type is unreachable. In the case of `Awaited<Type>`, it is used to indicate that the argument to the `then` method of an object is not callable and therefore cannot be unwrapped."
+    },
+    {
+      "question": "What is the special case for `null | undefined` in the definition of the `Awaited<Type>` type?",
+      "answer": "The special case for `null | undefined` in the definition of the `Awaited<Type>` type is used to handle the case where the `--strictNullChecks` compiler option is not enabled. In this case, `null` and `undefined` are not treated as distinct types and are instead treated as subtypes of all other types. Therefore, the `Awaited<Type>` type returns `null` or `undefined` if the input type is `null` or `undefined`."
+    }
+  ]
+}

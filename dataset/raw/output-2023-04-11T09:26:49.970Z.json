@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the NonNullable<Type> type in TypeScript?",
+      "answer": "The NonNullable<Type> type is used to create a new type that is the same as the original type, but with null and undefined removed from the union of possible types."
+    },
+    {
+      "question": "How does the NonNullable<Type> type work?",
+      "answer": "The NonNullable<Type> type uses conditional types to check if the original type extends null or undefined. If it does, the type is set to never, which effectively removes null and undefined from the union of possible types. If it doesn't, the type is left unchanged."
+    },
+    {
+      "question": "Can the NonNullable<Type> type be used with any type?",
+      "answer": "Yes, the NonNullable<Type> type can be used with any type, including primitive types, object types, and union types."
+    },
+    {
+      "question": "What is the difference between NonNullable<Type> and Exclude<Type, null | undefined>?",
+      "answer": "NonNullable<Type> and Exclude<Type, null | undefined> both remove null and undefined from the union of possible types, but NonNullable<Type> creates a new type that is the same as the original type, while Exclude<Type, null | undefined> creates a new type that is a subset of the original type."
+    },
+    {
+      "question": "Can the NonNullable<Type> type be used to remove other types from a union?",
+      "answer": "No, the NonNullable<Type> type is specifically designed to remove null and undefined from a union of types. To remove other types from a union, you can use the Exclude<Type, ExcludedUnion> type."
+    }
+  ]
+}

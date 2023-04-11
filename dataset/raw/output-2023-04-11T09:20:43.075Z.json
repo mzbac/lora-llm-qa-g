@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Required<Type> type in TypeScript?",
+      "answer": "The Required<Type> type is used to create a new type that makes all properties of the original type required."
+    },
+    {
+      "question": "How does the Required<Type> type work?",
+      "answer": "The Required<Type> type uses mapped types to iterate over all properties of the original type and remove the optional modifier from each property using the -? modifier."
+    },
+    {
+      "question": "Can the Required<Type> type be used with nested objects?",
+      "answer": "Yes, the Required<Type> type can be used with nested objects. It will recursively make all properties of the nested objects required as well."
+    },
+    {
+      "question": "What happens if a property in the original type is already required?",
+      "answer": "If a property in the original type is already required, the Required<Type> type will not modify it and leave it as required."
+    },
+    {
+      "question": "Can the Required<Type> type be used with arrays?",
+      "answer": "No, the Required<Type> type cannot be used with arrays because arrays do not have properties with keys."
+    }
+  ]
+}

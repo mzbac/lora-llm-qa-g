@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Divide<A, B> type in TypeScript?",
+      "answer": "The purpose of the Divide<A, B> type in TypeScript is to implement integer division of two non-negative numbers A and B. It returns the number of times B can be subtracted from A before the result becomes negative."
+    },
+    {
+      "question": "What are the edge cases to consider when implementing Divide<A, B>?",
+      "answer": "The edge cases to consider when implementing Divide<A, B> are: 1) we can't divide a number by 0, and 2) we don't want to return a float number for the result."
+    },
+    {
+      "question": "How is the Subtract<A, B> type used in the implementation of Divide<A, B>?",
+      "answer": "The Subtract<A, B> type is used in the implementation of Divide<A, B> to calculate the difference between A and B. It is used to recursively subtract B from A until A becomes smaller than B."
+    },
+    {
+      "question": "What is the purpose of the SmallerThan<A, B> type in the implementation of Divide<A, B>?",
+      "answer": "The purpose of the SmallerThan<A, B> type in the implementation of Divide<A, B> is to check if A is smaller than B. If A is smaller than B, the division is skipped to avoid non-integer numbers for the result."
+    },
+    {
+      "question": "How does the Divide<A, B> type recursively divide A by B?",
+      "answer": "The Divide<A, B> type recursively divides A by B by subtracting B from A until A becomes smaller than B. It then returns the number of times B was subtracted from A, which is the integer division of A by B."
+    }
+  ]
+}

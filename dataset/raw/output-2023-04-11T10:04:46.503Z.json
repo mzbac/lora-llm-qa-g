@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Slice<A, S, E> type in TypeScript?",
+      "answer": "The Slice<A, S, E> type is used to extract a portion of an array type A, starting from index S and ending at index E."
+    },
+    {
+      "question": "What is the LessThan type used for in the Slice<A, S, E> type?",
+      "answer": "The LessThan type is used to compare two numbers and return a boolean value indicating whether the first number is less than the second number."
+    },
+    {
+      "question": "What is the purpose of the I and O type parameters in the Slice<A, S, E> type?",
+      "answer": "The I type parameter is used to keep track of the current index while iterating over the array, and the O type parameter is used to accumulate the output array as the iteration progresses."
+    },
+    {
+      "question": "How does the Slice<A, S, E> type handle an empty array?",
+      "answer": "If the input array A is empty, the Slice<A, S, E> type will return an empty array."
+    },
+    {
+      "question": "What is the output of the A = Slice<[1,2,3,4], 0, 2> expression?",
+      "answer": "The output of the A = Slice<[1,2,3,4], 0, 2> expression is [1, 2]."
+    },
+    {
+      "question": "What is the output of the B = Slice<[1,2,3,4], 2> expression?",
+      "answer": "The output of the B = Slice<[1,2,3,4], 2> expression is [3, 4]."
+    },
+    {
+      "question": "What is the output of the C = Slice<[number, boolean, bigint], 2, 5> expression?",
+      "answer": "The output of the C = Slice<[number, boolean, bigint], 2, 5> expression is [bigint]."
+    },
+    {
+      "question": "What is the output of the D = Slice<[string, boolean], 0, 1> expression?",
+      "answer": "The output of the D = Slice<[string, boolean], 0, 1> expression is [string]."
+    },
+    {
+      "question": "What is the output of the E = Slice<[number, boolean, bigint], 5, 6> expression?",
+      "answer": "The output of the E = Slice<[number, boolean, bigint], 5, 6> expression is []."
+    }
+  ]
+}

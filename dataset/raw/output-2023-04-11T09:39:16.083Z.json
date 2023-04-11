@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the StringToTuple<T> type in TypeScript?",
+      "answer": "The purpose of the StringToTuple<T> type in TypeScript is to convert a string type to a tuple type, where each character in the string is represented as a separate element in the tuple."
+    },
+    {
+      "question": "How does the StringToTuple<T> type work?",
+      "answer": "The StringToTuple<T> type works by using conditional types and template literal types to recursively split the input string into individual characters and add them to a new tuple type. The type checks if the input string can be split into two parts, and if so, it adds the first character to the new tuple and recursively applies the StringToTuple<T> type to the rest of the string."
+    },
+    {
+      "question": "What is the inferred type of the L parameter in the StringToTuple<T> type?",
+      "answer": "The inferred type of the L parameter in the StringToTuple<T> type is a single character string type, representing the first character of the input string."
+    },
+    {
+      "question": "What is the purpose of the rest parameter in the StringToTuple<T> type?",
+      "answer": "The purpose of the rest parameter in the StringToTuple<T> type is to recursively apply the StringToTuple<T> type to the remaining characters in the input string, after the first character has been added to the new tuple type."
+    },
+    {
+      "question": "Can the StringToTuple<T> type be used with any string type?",
+      "answer": "The StringToTuple<T> type can be used with any string type that is a subtype of the string type in TypeScript. This includes string literals, string variables, and string types that have been extended or modified."
+    }
+  ]
+}

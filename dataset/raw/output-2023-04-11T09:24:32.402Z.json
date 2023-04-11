@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the Omit<Type, Keys> type in TypeScript?",
+      "answer": "The Omit<Type, Keys> type in TypeScript is used to create a new type that omits specific keys from an existing type. It takes two type parameters: Type, which is the original type, and Keys, which is a union of the keys to be omitted from the original type."
+    },
+    {
+      "question": "What is the syntax for using the Omit<Type, Keys> type in TypeScript?",
+      "answer": "The syntax for using the Omit<Type, Keys> type in TypeScript is as follows: \n\n type NewType = Omit<OriginalType, Keys> \n\n where OriginalType is the type from which keys are being omitted, and Keys is a union of the keys to be omitted. NewType is the resulting type that does not contain the omitted keys."
+    },
+    {
+      "question": "What is the purpose of the keyof keyword in the Omit<Type, Keys> type?",
+      "answer": "The keyof keyword in the Omit<Type, Keys> type is used to ensure that the omitted keys are valid object key types. It is used in the definition of the Keys type parameter, which is a union of the keys to be omitted from the original type. By using keyof, TypeScript ensures that only valid object keys can be used in the Keys union."
+    },
+    {
+      "question": "What is the purpose of the as keyword in the Omit<Type, Keys> type?",
+      "answer": "The as keyword in the Omit<Type, Keys> type is used to remap keys when they are not part of the omitted keys. It is used in the definition of the resulting type, which is created by iterating over the keys of the original type and including only those keys that are not part of the Keys union. By using as, TypeScript remaps the keys that are not part of the Keys union to their original names."
+    },
+    {
+      "question": "Can the Omit<Type, Keys> type be used with any type in TypeScript?",
+      "answer": "Yes, the Omit<Type, Keys> type can be used with any type in TypeScript. It is a generic type that takes two type parameters: Type, which is the original type, and Keys, which is a union of the keys to be omitted from the original type. As long as the original type has keys that can be omitted, the Omit<Type, Keys> type can be used with it."
+    }
+  ]
+}

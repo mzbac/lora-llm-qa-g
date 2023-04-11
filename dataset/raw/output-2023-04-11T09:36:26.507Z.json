@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the LastChar<T> type in TypeScript?",
+      "answer": "The LastChar<T> type in TypeScript is used to extract the last character of a string type T."
+    },
+    {
+      "question": "How does the LastChar<T> type work?",
+      "answer": "The LastChar<T> type works by recursively checking if the inferred rest type R of the input string type T is an empty string. If it is empty, then the first character F in the current recursion is the last character of the original string. If it is not empty, the recursion continues until an empty string is found."
+    },
+    {
+      "question": "What is the purpose of the infer keyword in the LastChar<T> type?",
+      "answer": "The infer keyword in the LastChar<T> type is used to infer the type of the first character F and the rest of the string R in the input string type T. This allows us to manipulate and extract the characters of the string type T in the type definition."
+    },
+    {
+      "question": "Can the LastChar<T> type be used with any string type T?",
+      "answer": "The LastChar<T> type can only be used with string types T that have at least one character. If T is an empty string, the type definition will result in a never type."
+    },
+    {
+      "question": "What is the benefit of using the LastChar<T> type in TypeScript?",
+      "answer": "The benefit of using the LastChar<T> type in TypeScript is that it allows us to extract the last character of a string type T at compile-time. This can be useful in scenarios where we need to ensure that a certain character is the last character of a string, or when we need to perform type-level operations on the last character of a string."
+    }
+  ]
+}

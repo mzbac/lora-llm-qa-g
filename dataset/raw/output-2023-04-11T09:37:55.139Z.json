@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "What is a tuple in TypeScript?",
+      "answer": "A tuple is a type that represents an array with a fixed number of elements, where each element may have a different type."
+    },
+    {
+      "question": "What is the purpose of the infer keyword in the TupleToUnion type?",
+      "answer": "The infer keyword is used to infer the type of a generic parameter from a given type. In the TupleToUnion type, it is used to infer the type of the first element of the tuple."
+    },
+    {
+      "question": "What is the purpose of the extends keyword in the TupleToUnion type?",
+      "answer": "The extends keyword is used to constrain the type parameter T to be an array. This ensures that the TupleToUnion type can only be used with arrays."
+    },
+    {
+      "question": "What is the purpose of the never keyword in the TupleToUnion type?",
+      "answer": "The never keyword is used to indicate that a type is unreachable. In the TupleToUnion type, it is used as the return type when the input tuple is empty."
+    },
+    {
+      "question": "How does the TupleToUnion type convert a tuple to a union type?",
+      "answer": "The TupleToUnion type uses recursion to iterate over the elements of the input tuple. It unions the first element with the result of the recursion on the rest of the tuple. This process continues until the tuple is empty, at which point it returns the never type."
+    }
+  ]
+}
